@@ -45,6 +45,17 @@ def remove(id: Id): Future[Option[EntityEmbeddedId]]
       } yield conv(value)
   }
 ```
+
+## `lifted.SlickColumnOptionOps.scala`
+Play <=> SQLとDBのデータ型のマッピングを行っている
+
+定義元は[ixias.persistence.lifted.SlickColumnOptionOps](https://github.com/ixias-net/ixias/blob/develop/framework/ixias-core/src/main/scala/ixias/persistence/lifted/SlickColumnOptionOps.scala)に記載されており、この中からマッチしているカラムに変換する処理を記述する
+
+```scala
+例
+def content = column[String]("body", O.Text)
+```
+
 ## model.Cursor.scala
 データ検索を行う際のCursor(検索結果からデータを抜き取るための仕組み)を定義
 ```scala
