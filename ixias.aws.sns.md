@@ -1,5 +1,5 @@
 ## `AmazonSNS.scala`
-AmazonSNSに関するライブラリ群
+AWS SNSに関するライブラリ
 
 ```scala
 // snsメッセージをsnsトピックに送信するメソッド
