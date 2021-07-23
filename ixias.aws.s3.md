@@ -16,7 +16,3 @@ case class File(
   val createdAt:    LocalDateTime        = NOW   // The Datetime when a data was created.
 ) extends EntityModel[File.Id]
 ```
-## `AmazonS3.scala`
-```
-S3に画像を格納
-```

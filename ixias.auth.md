@@ -5,7 +5,7 @@ ixias-play-authはIxiasを用いてPlayアプリに認証機能を導入する�
 ![ディレクトリ構造](https://miro.medium.com/max/1120/1*KrOt56KAoyUSTGYi2ubu2Q.png)
 
 ## Containerについて
-Containerディレクトリは、認証トークンを生成、更新、削除するデータストアについて定義もの。
+Containerディレクトリは、認証トークンを生成、更新、削除するデータストアについて定義したもの。
 ```scala
 // セッションが開始した時に自動で実行されるコールバックで認証トークンを生成するメソッド
 def open(uid: Id, expiry: Duration)
@@ -65,6 +65,7 @@ tokenディレクトリは、認証トークンについて定義したもの。
 [定義元](https://github.com/ixias-net/ixias/tree/develop/framework/ixias-play-auth/src/main/scala/ixias/play/api/auth/token)
 
 ```scala
+// 認証トークンの定義
 Token.scala
 sealed trait Tag
 protected object Tag {
