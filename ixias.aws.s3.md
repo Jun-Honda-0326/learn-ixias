@@ -3,6 +3,7 @@ AWS s3に関するライブラリ
 
 ## `model.File.scala`
 S3 Fileのモデル定義
+[定義元](https://github.com/ixias-net/ixias/blob/develop/framework/ixias-aws-s3/src/main/scala/ixias/aws/s3/model/File.scala)
 ```scala
 case class File(
   val id:           Option[File.Id],             // Id
